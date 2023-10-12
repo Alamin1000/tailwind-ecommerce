@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind Ecommerce</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://kit-pro.fontawesome.com/releases/v5.15.2/css/pro.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="">
+    <!-- header -->
+    <header class="py-4 shadow-sm bg-white">
+      <div class="container flex items-center justify-between">
+        <!-- logo -->
+        <a href="index.html">
+          <p class="text-4xl">LOGO</p>
+        </a>
+        <!-- searchbar -->
+        <div class="w-full-max-w-xl relative flex">
+          <span class="absolute left-4 top-3 text-lg text-gray-400">
+            <i class="fas fa-search"></i>
+          </span>
+          <input
+            type="text"
+            class="w-full border border-primary border-r-0 pl-12 py-3 pr-3 rounded-l-md focus:outline-none"
+            placeholder="search"
+          />
+          <button
+            class="button bg-primary border border-primary text-white px-8 rounded-r-md hover:bg-transparent hover:text-primary transition"
+          >
+            Search
+          </button>
+        </div>
+
+        <!-- icons -->
+        <div class="flex items-center space-x-4">
+          <a
+            href="#"
+            class="text-center text-gray-700 hover:text-primary transition relative"
+          >
+            <span class="text-2xl">
+              <i class="far fa-heart"></i>
+              <div class="text-xs leading-3">Wish List</div>
+              <span
+                class="absolute right-0 -top-1 w-4 h-4 rounded-full flex items-center justify-center bg-primary text-white text-xs"
+                >8</span
+              >
+            </span>
+          </a>
+          <a
+            href="#"
+            class="text-center text-gray-700 hover:text-primary transition relative"
+          >
+            <span class="text-2xl">
+              <i class="far fa-cart-plus"></i>
+              <div class="text-xs leading-3">Cart</div>
+              <span
+                class="absolute -right-3 -top-1 w-4 h-4 rounded-full flex items-center justify-center bg-primary text-white text-xs"
+                >5</span
+              >
+            </span>
+          </a>
+          <a
+            href="#"
+            class="text-center text-gray-700 hover:text-primary transition relative"
+          >
+            <span class="text-2xl">
+              <i class="far fa-user"></i>
+              <div class="text-xs leading-3">Account</div>
+            </span>
+          </a>
+        </div>
+      </div>
+    </header>
+    <!-- header-end -->
+
+    <!-- navbar -->
+    <nav class="bg-gray-800">
+      <div class="container flex">
+        <!-- all-category -->
+        <div
+          class="px-8 py-4 bg-primary flex items-center justify-center cursor-pointer relative group"
+        >
+          <div class="text-white">
+            <i class="fas fa-bars"></i>
+          </div>
+          <span class="capitalize ml-2 text-white">All Category</span>
+
+          <div
+            class="absolute w-full left-0 top-full bg-white shadow-md py-3 divide-y divide-gray-300 divide-dashed invisible group-hover:visible opacity-0 group-hover:opacity-100 transition duration-300"
+          >
+            <a
+              href="#"
+              class="flex items-center px-6 py-3 hover:bg-gray-100 transition"
+            >
+              <span><i class="far fa-bars"></i></span>
+              <span class="ml-6 text-gray-600 text-sm">Sofa</span>
+            </a>
+            <a
+              href="#"
+              class="flex items-center px-6 py-3 hover:bg-gray-100 transition"
+            >
+              <span><i class="far fa-bars"></i></span>
+              <span class="ml-6 text-gray-600 text-sm">Sofa</span>
+            </a>
+            <a
+              href="#"
+              class="flex items-center px-6 py-3 hover:bg-gray-100 transition"
+            >
+              <span><i class="far fa-bars"></i></span>
+              <span class="ml-6 text-gray-600 text-sm">Sofa</span>
+            </a>
+            <a
+              href="#"
+              class="flex items-center px-6 py-3 hover:bg-gray-100 transition"
+            >
+              <span><i class="far fa-bars"></i></span>
+              <span class="ml-6 text-gray-600 text-sm">Sofa</span>
+            </a>
+            <a
+              href="#"
+              class="flex items-center px-6 py-3 hover:bg-gray-100 transition"
+            >
+              <span><i class="far fa-bars"></i></span>
+              <span class="ml-6 text-gray-600 text-sm">Sofa</span>
+            </a>
+            <a
+              href="#"
+              class="flex items-center px-6 py-3 hover:bg-gray-100 transition"
+            >
+              <span><i class="far fa-bars"></i></span>
+              <span class="ml-6 text-gray-600 text-sm">Sofa</span>
+            </a>
+          </div>
+        </div>
+        <!-- all-category end -->
+
+        <!-- navbar-links -->
+        <div class="flex justify-between items-center flex-grow pl-12">
+          <div class="flex items-center space-x-6 capitalize">
+            <a
+              href="index.html"
+              class="text-gray-200 hover:text-white transition"
+              >Home</a
+            >
+            <a
+              href="shop.html"
+              class="text-gray-200 hover:text-white transition"
+              >Shop</a
+            >
+            <a
+              href="about-us.html"
+              class="text-gray-200 hover:text-white transition"
+              >About us</a
+            >
+            <a
+              href="contact-us.html"
+              class="text-gray-200 hover:text-white transition"
+              >Contact us</a
+            >
+          </div>
+          <div class="flex items-center space-x-6 capitalize">
+            <a href="#" class="text-gray-200 hover:text-white transition"
+              >Login/Register</a
+            >
+          </div>
+        </div>
+        <!-- navbar-links end -->
+      </div>
+    </nav>
+    <!-- navbar-end -->
+
+    <!-- Account wrapper -->
+    <div class="py-16">
+      <div class="container">
+        <div class="grid grid-cols-12 items-start gap-6 pt-4 pb-16">
+          <!-- sidebar -->
+          <div class="col-span-3">
+            <!-- account profile -->
+            <div class="px-4 py-4 shadow flex items-center gap-4">
+              <img
+                src="../images/avatar.png"
+                alt=""
+                class="rounded-full w-14 h-14 border border-gray-200 p-1 object-cover object-center"
+              />
+              <div class="flex-grow">
+                <p class="text-gray-600">Hello,</p>
+                <h4 class="text-gray-800 font-midium">Russell Ahmed</h4>
+              </div>
+            </div>
+            <!-- account profile end -->
+            <!-- profile links -->
+            <div
+              class="mt-6 bg-white shadow rounded p-4 divide-y divide-gray-200 space-y-4 text-gray-600"
+            >
+              <!-- single link -->
+              <div class="space-y-1 pl-8">
+                <a
+                  href="#"
+                  class="relative block font-medium capitalize transition"
+                >
+                  <span class="absolute -left-8 top-0 text-base"
+                    ><i class="far fa-address-card"></i
+                  ></span>
+                  Manage account</a
+                >
+                <a
+                  href="#"
+                  class="block capitalize text-primary hover:text-primary transition"
+                >
+                  <span class="absolute -left-8 top-0 text-base"
+                    ><i class="far fa-address-card"></i
+                  ></span>
+                  Profile info</a
+                >
+                <a
+                  href="#"
+                  class="block capitalize hover:text-primary transition"
+                >
+                  <span class="absolute -left-8 top-0 text-base"
+                    ><i class="far fa-address-card"></i
+                  ></span>
+                  Manage address</a
+                >
+                <a
+                  href="#"
+                  class="block capitalize hover:text-primary transition"
+                >
+                  <span class="absolute -left-8 top-0 text-base"
+                    ><i class="far fa-address-card"></i
+                  ></span>
+                  Change password</a
+                >
+              </div>
+              <!-- single link end -->
+              <!-- single link -->
+              <div class="space-y-1 pl-8 pt-4">
+                <a
+                  href="#"
+                  class="relative block capitalize transition text-gray-800"
+                >
+                  <span class="absolute -left-8 top-0 text-base"
+                    ><i class="far fa-address-card"></i
+                  ></span>
+                  Manage account</a
+                >
+                <a
+                  href="#"
+                  class="block capitalize hover:text-primary transition"
+                >
+                  <span class="absolute -left-8 top-0 text-base"
+                    ><i class="far fa-address-card"></i
+                  ></span>
+                  My order history</a
+                >
+                <a
+                  href="#"
+                  class="block capitalize hover:text-primary transition"
+                >
+                  <span class="absolute -left-8 top-0 text-base"
+                    ><i class="far fa-address-card"></i
+                  ></span>
+                  Profile info</a
+                >
+                <a
+                  href="#"
+                  class="block capitalize hover:text-primary transition"
+                >
+                  <span class="absolute -left-8 top-0 text-base"
+                    ><i class="far fa-address-card"></i
+                  ></span>
+                  Manage address</a
+                >
+              </div>
+              <!-- single link end -->
+              <!-- single link -->
+              <div class="space-y-1 pl-8 pt-4">
+                <a
+                  href="#"
+                  class="relative block capitalize transition text-gray-800"
+                >
+                  <span class="absolute -left-8 top-0 text-base"
+                    ><i class="far fa-address-card"></i
+                  ></span>
+                  Payment Methods</a
+                >
+                <a
+                  href="#"
+                  class="block capitalize hover:text-primary transition"
+                >
+                  <span class="absolute -left-8 top-0 text-base"
+                    ><i class="far fa-address-card"></i
+                  ></span>
+                  Voucher</a
+                >
+              </div>
+              <!-- single link end -->
+              <!-- single link -->
+              <div class="space-y-1 pl-8 pt-4">
+                <a
+                  href="#"
+                  class="relative block font-medium capitalize transition text-gray-800"
+                >
+                  <span class="absolute -left-8 top-0 text-base"
+                    ><i class="far fa-address-card"></i
+                  ></span>
+                  My Wishlist</a
+                >
+              </div>
+              <!-- single link end -->
+              <!-- single link -->
+              <div class="space-y-1 pl-8 pt-4">
+                <a
+                  href="#"
+                  class="relative block font-medium capitalize transition text-gray-800"
+                >
+                  <span class="absolute -left-8 top-0 text-base"
+                    ><i class="far fa-address-card"></i
+                  ></span>
+                  Logout</a
+                >
+              </div>
+              <!-- single link end -->
+            </div>
+            <!-- profile links end -->
+          </div>
+          <!-- sidebar end -->
+
+          <!-- profile info -->
+          <div class="col-span-9">
+            <div class="shadow rounded px-6 p5-5 pb-7">
+              <h4 class="text-lg-font-medium capitalize mb-4">Profile info</h4>
+              <div class="space-y-4">
+                <!-- form row -->
+                <div class="grid grid-cols-2 gap-4">
+                  <!-- single input -->
+                  <div>
+                    <label for="" class="mb-2 block text-gray-600"
+                      >Full name</label
+                    >
+                    <input
+                      type="text"
+                      class="input-element"
+                      placeholder="Name"
+                    />
+                  </div>
+                  <!-- single input end -->
+                  <!-- single input -->
+                  <div>
+                    <label for="" class="mb-2 block text-gray-600"
+                      >Full name</label
+                    >
+                    <input
+                      type="text"
+                      class="input-element"
+                      placeholder="Name"
+                    />
+                  </div>
+                  <!-- single input end -->
+                </div>
+                <!-- form row end -->
+                <!-- form row -->
+                <div class="grid grid-cols-2 gap-4">
+                  <!-- single input -->
+                  <div>
+                    <label for="" class="mb-2 block text-gray-600"
+                      >Full name</label
+                    >
+                    <input
+                      type="date"
+                      class="input-element"
+                      placeholder="Birthday"
+                    />
+                  </div>
+                  <!-- single input end -->
+                  <!-- single input -->
+                  <div>
+                    <label for="" class="mb-2 block text-gray-600"
+                      >Gender</label
+                    >
+                    <select class="input-element" placeholder="Name">
+                      <option>Male</option>
+                      <option>Female</option>
+                    </select>
+                  </div>
+                  <!-- single input end -->
+                </div>
+                <!-- form row end -->
+                <!-- form row -->
+                <div class="grid grid-cols-2 gap-4">
+                  <!-- single input -->
+                  <div>
+                    <label for="" class="mb-2 block text-gray-600"
+                      >Full name</label
+                    >
+                    <input
+                      type="mail"
+                      class="input-element"
+                      placeholder="Email"
+                    />
+                  </div>
+                  <!-- single input end -->
+                  <!-- single input -->
+                  <div>
+                    <label for="" class="mb-2 block text-gray-600"
+                      >Phone Number</label
+                    >
+                    <input
+                      type="phone"
+                      class="input-element"
+                      placeholder="Enter the Phone Number"
+                    />
+                  </div>
+                  <!-- single input end -->
+                </div>
+                <!-- form row end -->
+              </div>
+              <div class="mt-4">
+                <button
+                  type="submit"
+                  class="block text-center py-2 px-4 bg-primary border border-primary text-white rounded hover:bg-transparent hover:text-primary transition font-roboto"
+                >
+                  save changes
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- profile info end -->
+        </div>
+      </div>
+    </div>
+    <!-- Account wrapper end -->
+
+    <!-- footer -->
+    <footer class="bg-white pt-14 pb-12 border-t border-gray-100">
+      <div class="container">
+        <div class="grid grid-cols-3">
+          <!-- footer text -->
+          <div class="col-span-1 space-y-8">
+            <img src="../images/logo.svg" alt="" class="1-30" />
+            <p class="text-gray-500">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Inventore quas.
+            </p>
+            <div class="flex space-x-6">
+              <a href="#" class="text-gray-400 hover:text-gray-500">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="text-gray-400 hover:text-gray-500">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="#" class="text-gray-400 hover:text-gray-500">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="text-gray-400 hover:text-gray-500">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+          <!-- footer text end -->
+          <!-- footer links -->
+          <div class="col-span-2">
+            <div class="grid grid-cols-2 gap-8">
+              <div class="grid grid-cols-2 gap-8">
+                <div>
+                  <h3
+                    class="text-primary font-semibold text-gray-400 uppercase tracking-wider"
+                  >
+                    Solutions
+                  </h3>
+                  <div class="mt-4 space-y-4">
+                    <a
+                      href="#"
+                      class="text-base text-gray-500 hover:text-gray-900 block"
+                      >Marketing</a
+                    >
+                    <a
+                      href="#"
+                      class="text-base text-gray-500 hover:text-gray-900 block"
+                      >Analytics</a
+                    >
+                    <a
+                      href="#"
+                      class="text-base text-gray-500 hover:text-gray-900 block"
+                      >Commerce</a
+                    >
+                    <a
+                      href="#"
+                      class="text-base text-gray-500 hover:text-gray-900 block"
+                      >Insights</a
+                    >
+                  </div>
+                </div>
+                <div>
+                  <h3
+                    class="text-primary font-semibold text-gray-400 uppercase tracking-wider"
+                  >
+                    Solutions
+                  </h3>
+                  <div class="mt-4 space-y-4">
+                    <a
+                      href="#"
+                      class="text-base text-gray-500 hover:text-gray-900 block"
+                      >Marketing</a
+                    >
+                    <a
+                      href="#"
+                      class="text-base text-gray-500 hover:text-gray-900 block"
+                      >Analytics</a
+                    >
+                    <a
+                      href="#"
+                      class="text-base text-gray-500 hover:text-gray-900 block"
+                      >Commerce</a
+                    >
+                    <a
+                      href="#"
+                      class="text-base text-gray-500 hover:text-gray-900 block"
+                      >Insights</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="grid grid-cols-2 gap-8">
+                <div>
+                  <h3
+                    class="text-primary font-semibold text-gray-400 uppercase tracking-wider"
+                  >
+                    Solutions
+                  </h3>
+                  <div class="mt-4 space-y-4">
+                    <a
+                      href="#"
+                      class="text-base text-gray-500 hover:text-gray-900 block"
+                      >Marketing</a
+                    >
+                    <a
+                      href="#"
+                      class="text-base text-gray-500 hover:text-gray-900 block"
+                      >Analytics</a
+                    >
+                    <a
+                      href="#"
+                      class="text-base text-gray-500 hover:text-gray-900 block"
+                      >Commerce</a
+                    >
+                    <a
+                      href="#"
+                      class="text-base text-gray-500 hover:text-gray-900 block"
+                      >Insights</a
+                    >
+                  </div>
+                </div>
+                <div>
+                  <h3
+                    class="text-primary font-semibold text-gray-400 uppercase tracking-wider"
+                  >
+                    Solutions
+                  </h3>
+                  <div class="mt-4 space-y-4">
+                    <a
+                      href="#"
+                      class="text-base text-gray-500 hover:text-gray-900 block"
+                      >Marketing</a
+                    >
+                    <a
+                      href="#"
+                      class="text-base text-gray-500 hover:text-gray-900 block"
+                      >Analytics</a
+                    >
+                    <a
+                      href="#"
+                      class="text-base text-gray-500 hover:text-gray-900 block"
+                      >Commerce</a
+                    >
+                    <a
+                      href="#"
+                      class="text-base text-gray-500 hover:text-gray-900 block"
+                      >Insights</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- footer links end -->
+        </div>
+      </div>
+    </footer>
+    <!-- footer end -->
+
+    <!-- copyright area -->
+    <div class="bg-gray-800 py-4">
+      <div class="container">
+        <div class="flex items-center justify-between">
+          <p class="text-white">&copy; Alamin - All Rights Reserved</p>
+          <img src="../images/methods.png" alt="" class="h-5" />
+        </div>
+      </div>
+    </div>
+    <!-- copyright area end -->
+  </body>
+</html>
